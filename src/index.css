@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Metamorphous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pavanam&family=Pattaya&family=Metamorphous&display=swap');
+
+
+@import "tailwindcss";
+@layer utilities {
+    .selection-red {
+      ::selection {
+        background-color: red;
+        color: white; /* Optional: Change text color */
+      }
+    }
+  }
+
+
