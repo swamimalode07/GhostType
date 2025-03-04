@@ -1,22 +1,9 @@
-# ![#D82934](https://via.placeholder.com/15/D82934/000000?text=+) GhostType - Typing Test App
+  <img src="GhostType.png" alt="GhostType" width="100"/>
+## GhostType
 
-![GhostType](GhostType.png)
 
-![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)
-![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)
-![Visitors](https://visitor-badge.glitch.me/badge?page_id=ghost-type)
-![GitHub forks](https://img.shields.io/github/forks/yourusername/ghost-type?style=social)
-![GitHub Repo stars](https://img.shields.io/github/stars/yourusername/ghost-type?style=social)
-![GitHub contributors](https://img.shields.io/github/contributors/yourusername/ghost-type)
-![GitHub last commit](https://img.shields.io/github/last-commit/yourusername/ghost-type)
-![GitHub repo size](https://img.shields.io/github/repo-size/yourusername/ghost-type)
-![GitHub license](https://img.shields.io/github/license/yourusername/ghost-type)
-![GitHub issues](https://img.shields.io/github/issues/yourusername/ghost-type)
-![GitHub closed issues](https://img.shields.io/github/issues-closed/yourusername/ghost-type)
-![GitHub pull requests](https://img.shields.io/github/issues-pr/yourusername/ghost-type)
-![GitHub closed pull requests](https://img.shields.io/github/issues-pr-closed/yourusername/ghost-type)
 
----
+
 
 ## 🚀 About GhostType
 GhostType is a sleek and modern typing speed test application built with **React, Appwrite, and Vite**. It allows users to test their typing speed, track performance, and compete on a leaderboard.
@@ -24,19 +11,19 @@ GhostType is a sleek and modern typing speed test application built with **React
 ---
 
 ## 🎨 UI Theme
-- **Primary Color**: ![#D82934](https://via.placeholder.com/15/D82934/000000?text=+) `#D82934` (Accent, Buttons, Highlights)
-- **Borders & Secondary Elements**: ![#5E5E5E](https://via.placeholder.com/15/5E5E5E/000000?text=+) `#5E5E5E`
-- **Background**: ![#232323](https://via.placeholder.com/15/232323/000000?text=+) `#232323` (Dark Mode)
+- **Primary Color**:  `#D82934` (Accent, Buttons, Highlights)
+- **Borders & Secondary Elements**:  `#5E5E5E`
+- **Background**: `#232323` (Dark Mode)
 
 ---
 
 ## ✨ Features
-✅ Real-time typing speed tracking (WPM, Accuracy, Mistakes)
-✅ Sound effects for key presses, deletions, and spacebar
-✅ Auto-generated word sequences for varied tests
-✅ User authentication using **Appwrite**
-✅ Leaderboard system to track high scores
-✅ Fully responsive & accessible design
+✅ Real-time typing speed tracking (WPM, Accuracy, Mistakes)  
+✅ Sound effects for key presses, deletions, and spacebar  
+✅ Auto-generated word sequences for varied tests  
+✅ User authentication using **Appwrite**  
+✅ Leaderboard system to track high scores  
+✅ Fully responsive & accessible design  
 
 ---
 
@@ -53,7 +40,7 @@ GhostType is a sleek and modern typing speed test application built with **React
 
 ### 1️⃣ Clone the Repository
 ```bash
- git clone https://github.com/yourusername/ghost-type.git
+ git clone https://github.com/swamimalode/ghost-type.git
  cd ghost-type
 ```
 
@@ -96,23 +83,15 @@ The app should now be running at `http://localhost:5173`
 ---
 
 ## 🎮 How to Play
-1️⃣ Click inside the typing area or press any key to start.
-2️⃣ Type the words as they appear on the screen.
-3️⃣ Your WPM (Words Per Minute) and Accuracy are updated in real time.
-4️⃣ Complete the test and view your results.
-5️⃣ Logged-in users can save scores and appear on the leaderboard.
+1️⃣ Click inside the typing area or press any key to start.  
+2️⃣ Type the words as they appear on the screen.  
+3️⃣ Your WPM (Words Per Minute) and Accuracy are updated in real time.  
+4️⃣ Complete the test and view your results.  
+5️⃣ Logged-in users can save scores and appear on the leaderboard.  
 
 ---
 
-## 📌 Contributing
-Pull requests are welcome! If you'd like to contribute:
-1. Fork the repository
-2. Create a new branch (`git checkout -b feature-branch`)
-3. Commit your changes (`git commit -m 'Add new feature'`)
-4. Push to the branch (`git push origin feature-branch`)
-5. Open a pull request
 
----
 
 ## 📜 License
 This project is **MIT Licensed**. Feel free to use and modify it.
