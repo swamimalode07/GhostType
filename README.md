@@ -1,6 +1,6 @@
 # ![#D82934](https://via.placeholder.com/15/D82934/000000?text=+) GhostType - Typing Test App
 
-![GhostType](https://ghost-type.vercel.app/logo.png)
+![GhostType](GhostType.png)
 
 ![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)
 ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)
