@@ -3,16 +3,15 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="w-full bg-[#181818] text-white py-8 border-t border-[#5E5E5E] mt-10  selection:bg-red-500 selection:text-black" >
+    <footer className="w-full bg-[#181818] text-white py-8 border-t border-[#5E5E5E]   selection:bg-red-500 selection:text-black" >
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center px-6">
         
-        {/* Logo */}
-        <div className="flex items-center gap-2 text-2xl font-semibold">
-          <span className="font-[Pavanam] tracking-wide">Ghost</span>
-          <span className="font-[Pattaya] text-[#D82934]">Type</span>
+        
+        <div className="flex items-center text-2xl font-semibold">
+          <p className="font-[Pavanam] tracking-wide">Ghost</p>
+          <p className="font-[Pattaya] hover:text-[#D82934]">Type</p>
         </div>
 
-        {/* Navigation Links */}
         <div className="flex gap-6 text-sm mt-4 md:mt-0">
           <Link to="/about" className="hover:text-[#D82934] transition selection:bg-red-500  p-4  selection:bg-red-500 selection:text-black">
             About
@@ -25,7 +24,6 @@ const Footer = () => {
           </a>
         </div>
 
-        {/* Social Media Links */}
         <div className="flex gap-4 mt-4 md:mt-0  selection:bg-red-500 selection:text-black">
         <a href="https://x.com/SwamiMalode" target="_blank" rel="noopener noreferrer" className="text-xl hover:text-[#D82934] transition">
           <i className="fab fa-twitter"></i>
@@ -40,7 +38,6 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* Copyright Section */}
       <div className="text-center text-sm text-gray-400 mt-6  selection:bg-red-500 selection:text-black">
         © 2025 GhostType. Built with ❤️ by 
         <a href="https://swamimalode.online/" className="text-white hover:text-[#D82934] transition">

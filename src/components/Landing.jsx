@@ -15,82 +15,92 @@ function Landing() {
 
   
   const [openFAQ, setOpenFAQ] = useState(null);
-  const [userCount, setUserCount] = useState(0);
+  const [userCount, setUserCount] = useState(10);
   const [isInactive, setIsInactive] = useState(false);
   let inactivityTimer;
 
-  useEffect(() => {
-    const fetchUserCount = async () => {
-      try {
-        const response = await databases.listDocuments(import.meta.env.VITE_APPWRITE_DATABASE_ID, import.meta.env.VITE_APPWRITE_COLLECTION_ID);
-        setUserCount(response?.total || 0);
-      } catch (error) {
-        console.error("Error fetching user count:", error);
-      }
-    };
+      useEffect(() => {
+        const fetchUserCount = async () => {
+          try {
+            const response = await databases.listDocuments(import.meta.env.VITE_APPWRITE_DATABASE_ID, import.meta.env.VITE_APPWRITE_COLLECTION_ID);
+            setUserCount(response?.total || 10);
+          } catch (error) {
+            console.error("Error fetching user count:", error);
+          }
+        };
+      
+        fetchUserCount();
+      }, []);
   
-    fetchUserCount();
-  }, []);
-  
-  const resetInactivityTimer = () => {
-    setIsInactive(false);
-    clearTimeout(inactivityTimer);
-    inactivityTimer = setTimeout(() => {
-      setIsInactive(true);
-    }, 3000);
-  };
+      const resetInactivityTimer = () => {
+        setIsInactive(false);
+        clearTimeout(inactivityTimer);
+        inactivityTimer = setTimeout(() => {
+          setIsInactive(true);
+        }, 3000);
+      };
 
-  useEffect(() => {
-    window.addEventListener("mousemove", resetInactivityTimer);
-    window.addEventListener("keydown", resetInactivityTimer);
+      useEffect(() => {
+        window.addEventListener("mousemove", resetInactivityTimer);
+        window.addEventListener("keydown", resetInactivityTimer);
 
-    resetInactivityTimer();
+        resetInactivityTimer();
 
-    return () => {
-      window.removeEventListener("mousemove", resetInactivityTimer);
-      window.removeEventListener("keydown", resetInactivityTimer);
-      clearTimeout(inactivityTimer);
-    };
-  }, []);
-  
+        return () => {
+          window.removeEventListener("mousemove", resetInactivityTimer);
+          window.removeEventListener("keydown", resetInactivityTimer);
+          clearTimeout(inactivityTimer);
+        };
+      }, []);
+      
 
-  const faqs = [
-   
-    { 
-      question: "How can I improve my typing speed?", 
-      answer: "- Regular practice is key! Try to focus on accuracy first, then gradually increase your speed. Using proper finger placement can also help. " 
-    },
-    
-    { 
-      question: "What happens if I make a mistake while typing?", 
-      answer: "- Mistakes are highlighted in real time, and your accuracy percentage decreases slightly for each incorrect keystroke." 
-    },
-    { 
-      question: "How does this typing test work?", 
-      answer: "- Your typing speed is measured in Words Per Minute (WPM), and accuracy is based on correct keystrokes compared to total keystrokes." 
-    },
-    { 
-      question: "Is this typing test suitable for beginners?", 
-      answer: "- Absolutely! Whether you're a beginner or an advanced typist, it's a great choice" 
-    }
-  ];
+      const faqs = [
+      
+        { 
+          question: "How can I improve my typing speed?", 
+          answer: "- Regular practice is key! Try to focus on accuracy first, then gradually increase your speed. Using proper finger placement can also help. " 
+        },
+        
+        { 
+          question: "What happens if I make a mistake while typing?", 
+          answer: "- Mistakes are highlighted in real time, and your accuracy percentage decreases slightly for each incorrect keystroke." 
+        },
+        { 
+          question: "How does this typing test work?", 
+          answer: "- Your typing speed is measured in Words Per Minute (WPM), and accuracy is based on correct keystrokes compared to total keystrokes." 
+        },
+        { 
+          question: "Is this typing test suitable for beginners?", 
+          answer: "- Absolutely! Whether you're a beginner or an advanced typist, it's a great choice" 
+        }
+      ];
+
   return (
     <div className='bg-[#232323]'style={{ cursor: isInactive ? "url('data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22><text y=%2228%22 font-size=%2228%22>👻</text></svg>') 16 16, auto" : "auto" }}>
-
       <div className="text-white w-full h-[565px] bg-[#232323] flex flex-col items-center justify-center relative">
       <button className="absolute top-10 bg-[#2E2E2E] bg-opacity-40 backdrop-blur-lg border border-[#D82934] text-white text-[15px] font-semibold px-6 py-2 rounded-full flex items-center gap-2 shadow-md transition-all duration-300 ">
           <FontAwesomeIcon icon={faHeart} className="text-[#D82934]" />
             Proudly Open Source
       </button>
 
-        <p className="text-[70px] font-[Metamorphous] mb-8 selection:bg-red-500 selection:text-white p-4">Type fast, stay sharp, no limits!</p>
+        <p className="text-[70px] font-[Metamorphous] mb-8 mt-12 selection:bg-red-500 selection:text-white p-12">Type fast, stay sharp, no limits!</p>
+        
+        <div className="flex flex-row items-center gap-6 p-6">
         <Link to="/typing">
-            <button className="bg-[#D82934]  text-[25px] w-[280px] text-white px-6 py-3 rounded-lg selection:bg-red-500 selection:text-white p-4 hover:bg-[#B71F2A] transition mt-4">
-              Get Started
+            <button className="bg-[#D82934] text-[25px] w-[280px] text-white px-6 py-3 rounded-lg selection:bg-red-500 selection:text-white hover:bg-[#B71F2A] transition">
+               Get Started
             </button>
         </Link>
-      
-       
+
+        <Link to="/code">
+          <button className="bg-[#232323] border-2 border-red-500 text-[22px] w-[200px] text-white px-4 py-3 rounded-[8px] selection:bg-red-500 
+          selection:text-white hover:bg-[#B71F2A] transition opacity-80">
+            CodeType <span className="text-red-400 text-sm">(beta)</span>
+          </button>
+        </Link>
+      </div>
+
+
       </div>
 
       <div className='w-full h-[400px] bg-[#232323] flex justify-center items-center gap-6'>
@@ -165,7 +175,8 @@ function Landing() {
     
   </div>
   <TweetCard/>
-  <UserCount userCount={userCount} />
+  {/* <UserCount userCount={userCount} /> */}
+  
 </div>
      
     

@@ -14,6 +14,9 @@ import { AuthProvider } from "./utils/AuthContext";
 import NotFound from "./components/NotFound";
 import logo from "./assets/GhostType logo.png";
 import Setting from "./utils/Settings/Setting";
+import CodeType from "./components/CodeType";
+
+
 
 function App() {
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
@@ -30,7 +33,7 @@ function App() {
   if (isMobile) {
     return (
       <div className="h-screen w-screen flex flex-col items-center justify-center bg-[#232323] text-white text-center">
-          <img src={logo} alt="GhostType Logo" className="w-40 h-40 mb-6 animate-pulse "/>
+          <img src={logo} alt="GhostType Logo" className="w-40 h-40 mb-6  "/>
       <div>
               <span className="font-[Pavanam] text-[30px]">Ghost</span>
               <b className="font-[Pattaya] text-[30px]">Type</b>
@@ -52,6 +55,7 @@ function App() {
             <Route path="/register" element={<Register />} />
             <Route path="/about" element={<About />} />
             <Route path="/layout" element={<Layout />} />
+            <Route path="/code" element={<CodeType/>}/>
 
             <Route element={<PrivateRoutes />}>
               <Route path="/typing" element={<TypingBox />} />

@@ -11,12 +11,31 @@
     <meta property="og:image" content="https://ghosttype.swamimalode.online/ghosttypepreview.png" />
     <meta property="og:url" content="https://ghosttype.swamimalode.online/" />
     <meta property="og:description" content=" " /> 
+    
+    
+
+    
+
 
 
     <title>GhostType</title>
   </head>
   <style>
-    
+    html, body {
+        overflow: hidden;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        overflow-y: auto;
+        scrollbar-width: none; 
+      }
+
+      body::-webkit-scrollbar {
+        display: none; 
+      }
   </style>
   <body style="background-color: #232323;" class="selection:bg-red-700 selection:text-white">
     <div id="root"></div>

@@ -14,7 +14,9 @@
     "@fortawesome/free-solid-svg-icons": "^6.7.2",
     "@fortawesome/react-fontawesome": "^0.2.2",
     "@tailwindcss/vite": "^4.0.6",
+    "@tanstack/react-query": "^5.67.1",
     "appwrite": "^17.0.0",
+    "axios": "^1.8.1",
     "dom-to-image": "^2.6.0",
     "dom-to-image-more": "^3.5.0",
     "framer-motion": "^12.4.7",
@@ -25,6 +27,7 @@
     "react-dom": "^19.0.0",
     "react-icons": "^5.4.0",
     "react-router-dom": "^7.1.5",
+    "react-syntax-highlighter": "^15.6.1",
     "recharts": "^2.15.1",
     "tailwindcss": "^4.0.6"
   },

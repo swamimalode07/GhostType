@@ -55,7 +55,7 @@ const TypingTest = () => {
   };
 
   const generateWords = () => {
-    const newWords = generate({ exactly: 30, join: " " });
+    const newWords = generate({ exactly: 30 , join: " " });
     setWords(newWords);
     setCorrectWrong(Array(newWords.length).fill(" "));
     setCharIndex(0);
@@ -208,12 +208,11 @@ const TypingTest = () => {
   useEffect(() => {
     if (typing && (timeLeft === 0 || charIndex + 1 >= words.length)) {
       setTyping(false);
-      saveScore(); // Call saveScore here
+      saveScore(); 
       navigate("/results", { state: { wpm, accuracy, mistakes } });
     }
   }, [timeLeft, charIndex, typing]);
 
-  // Focus and blur handlers
   const handleFocus = () => {
     setIsFocused(true);
   };
@@ -222,7 +221,6 @@ const TypingTest = () => {
     setIsFocused(false);
   };
 
-  // Global keypress listener to start typing
   useEffect(() => {
     const handleKeyPress = (e) => {
       if (!isFocused && inputRef.current) {
@@ -240,6 +238,12 @@ const TypingTest = () => {
         <span className="font-[Pavanam] text-[30px]">Ghost</span>
         <b className="font-[Pattaya] text-[30px]">Type</b>
       </Link>
+      <Link
+                to="/" 
+                className="absolute top-3 left-36 bg-[#232323] text-white px-4 py-2 rounded-lg border-2 border-gray-600 hover:bg-gray-800 transition"
+            >
+                Home
+            </Link> 
 
       <div className="absolute top-4 right-4 flex gap-4 items-center">
         <button
@@ -271,13 +275,12 @@ const TypingTest = () => {
           onBlur={handleBlur}
         />
 
-        {/* Focus Prompt Overlay */}
         {!isFocused && (
           <div
-            className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-75 z-50"
-            style={{ pointerEvents: "none" }} // Allow clicks to pass through
+            className="fixed inset-0 flex items-center justify-center bg-black  opacity-80 z-50"
+            style={{ pointerEvents: "none" }} 
           >
-            <p className="text-white text-2xl font-semibold">
+            <p className="text-white text-2xl  font-semibold">
               Press any key to start typing!
             </p>
           </div>
