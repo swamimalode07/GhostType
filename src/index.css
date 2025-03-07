@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Metamorphous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pavanam&family=Pattaya&family=Metamorphous&display=swap');
+
+
+@import "tailwindcss";
+@layer utilities {
+    .selection-red {
+      ::selection {
+        background-color: red;
+        color: white; 
+      }
+    }
+  }
+
+
+
+  @layer utilities {
+    @keyframes scroll {
+      from {
+        transform: translateX(0);
+      }
+      to {
+        transform: translateX(-50%);
+      }
+    }
+    
+    .animate-scroll {
+      display: flex;
+      width: max-content;
+      animation: scroll 65s linear infinite;
+    }
+  
+
+    .hover\:pause-scroll:hover {
+      animation-play-state: paused;
+    }
+  }
+  
+  .high-contrast {
+    background-color: black !important;
+    color: yellow !important;
+  }
+  
+  .high-contrast p, 
+  .high-contrast span {
+    color: yellow !important;
+  }
+  
+
+
+  
+
+  
