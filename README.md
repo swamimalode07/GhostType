@@ -64,15 +64,8 @@ npm run dev
 
 The app should now be running at `http://localhost:5173`
 
----
 
 
-## 🎮 How to Play
-1️⃣ Click inside the typing area or press any key to start.  
-2️⃣ Type the words as they appear on the screen.  
-3️⃣ Your WPM (Words Per Minute) and Accuracy are updated in real time.  
-4️⃣ Complete the test and view your results.  
-5️⃣ Logged-in users can save scores and appear on the leaderboard.  
 
 ---
 
