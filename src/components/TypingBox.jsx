@@ -238,11 +238,11 @@ const TypingTest = () => {
         <b className="font-[Pattaya] text-[30px]">Type</b>
       </Link>
       <Link
-                to="/" 
-                className="absolute top-3 left-36 bg-[#232323] text-white px-4 py-2 rounded-lg border-2 border-gray-600 hover:bg-gray-800 transition"
-            >
-                Home
-            </Link> 
+  to="/"
+  className="absolute top-3 left-[8rem] text-center bg-[#232323] text-white px-4 py-2 rounded-lg border-2 border-gray-600 hover:bg-gray-800 transition"
+>
+  Home
+</Link>
 
       <div className="absolute top-4 right-4 flex gap-4 items-center">
         <button
