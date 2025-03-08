@@ -21,7 +21,7 @@ const TypingTest = () => {
   const charRefs = useRef([]);
   const [correctWrong, setCorrectWrong] = useState([]);
   const [words, setWords] = useState("");
-  const [isFocused, setIsFocused] = useState(false); // Track focus state
+  const [isFocused, setIsFocused] = useState(false); 
   const [isSoundOn, setIsSoundOn] = useState(() => {
     return JSON.parse(localStorage.getItem("soundEnabled")) ?? true;
   });
@@ -252,7 +252,7 @@ const TypingTest = () => {
       // Handle Enter key (new line)
       if (typedChar === "\n" || typedChar === "↵") {
         if (currentChar === "\n") {
-          setCharIndex((prev) => prev + 1); // Move cursor to the next character after newline
+          setCharIndex((prev) => prev + 1);
         }
         return;
       }
@@ -270,7 +270,7 @@ const TypingTest = () => {
   
     if (charIndex + 1 >= words.length) {
       setTyping(false);
-      saveScore(); // Save the score when test is finished
+      saveScore(); 
       navigate("/", { state: { wpm, accuracy, mistakes } });
     }
   };
