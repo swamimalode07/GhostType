@@ -1,9 +1,7 @@
   
-    <img src="GhostTypeBanner.png"/>
+<img src="/GhostType Banner.png" alt="Ghost Type Banner" />
+
 ## GhostType
-
-
-
 
 
 ## 🚀 About GhostType
@@ -68,20 +66,6 @@ The app should now be running at `http://localhost:5173`
 
 ---
 
-## 📂 Folder Structure
-```
-📂 ghost-type
- ┣ 📂 src
- ┃ ┣ 📂 components    # UI Components
- ┃ ┣ 📂 pages         # Page Components
- ┃ ┣ 📂 utils         # Utility Functions (Auth, API calls, etc.)
- ┃ ┣ 📜 appwriteConfig.js  # Appwrite Setup
- ┃ ┣ 📜 main.jsx      # Main Entry File
- ┃ ┗ 📜 index.css     # Global Styles
- ┗ 📜 package.json
-```
-
----
 
 ## 🎮 How to Play
 1️⃣ Click inside the typing area or press any key to start.  
@@ -92,16 +76,9 @@ The app should now be running at `http://localhost:5173`
 
 ---
 
-
-
-## 📜 License
-This project is **MIT Licensed**. Feel free to use and modify it.
-
----
-
 ## 📬 Contact
 For any questions or contributions, reach out:
 - 🌐 Portfolio: [swamimalode.online](http://swamimalode.online)
-- 🐦 Twitter: [@yourhandle](https://twitter.com/yourhandle)
-- 📧 Email: your.email@example.com
+
+- 📧 Email: swamimalodeofficial@gmail.com
 
