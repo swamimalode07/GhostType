@@ -1,4 +1,5 @@
-  <img src="GhostType.png" alt="GhostType" width="100"/>
+  
+    <img src="GhostTypeBanner.png"/>
 ## GhostType
 
 
