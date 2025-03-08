@@ -21,7 +21,7 @@ const TypingTest = () => {
   const charRefs = useRef([]);
   const [correctWrong, setCorrectWrong] = useState([]);
   const [words, setWords] = useState("");
-  const [isFocused, setIsFocused] = useState(false); // Track focus state
+  const [isFocused, setIsFocused] = useState(false); 
   const [isSoundOn, setIsSoundOn] = useState(() => {
     return JSON.parse(localStorage.getItem("soundEnabled")) ?? true;
   });
@@ -143,7 +143,6 @@ const TypingTest = () => {
     inputRef.current.focus();
   };
 
-  // Define the saveScore function
   const saveScore = async () => {
     if (!user) {
       console.error("No user logged in.");
