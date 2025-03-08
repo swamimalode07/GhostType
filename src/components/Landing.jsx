@@ -92,15 +92,21 @@ function Landing() {
             </button>
         </Link>
 
-        <Link to="/code">
+{/*         <Link to="/code">
           <button className="bg-[#232323] border-2 border-red-500 text-[22px] w-[200px] text-white px-4 py-3 rounded-[8px] selection:bg-red-500 
           selection:text-white hover:bg-[#B71F2A] transition opacity-80">
             CodeType <span className="text-red-400 text-sm">(beta)</span>
           </button>
-        </Link>
+        </Link> */}
       </div>
 
 
+      </div>
+
+      <div className="w-full flex justify-center mt-6">
+        <span className="font-bold text-lg tracking-wide text-white bg-[#232323] border-2 px-6 py-3 rounded-full shadow-md">
+          {userCount}+ Users
+        </span>
       </div>
 
       <div className='w-full h-[400px] bg-[#232323] flex justify-center items-center gap-6'>
