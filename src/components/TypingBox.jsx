@@ -233,16 +233,18 @@ const TypingTest = () => {
 
   return (
     <div className="relative flex justify-center items-center min-h-screen p-40">
-      <Link to="/" className="flex items-center absolute top-4 left-4 text-white">
+      <Link to="/" className="flex items-center absolute top-4 left-4  text-white">
         <span className="font-[Pavanam] text-[30px]">Ghost</span>
         <b className="font-[Pattaya] text-[30px]">Type</b>
       </Link>
       <Link
   to="/"
-  className="absolute top-3 left-[8rem] text-center bg-[#232323] text-white px-4 py-2 rounded-lg border-2 border-gray-600 hover:bg-gray-800 transition"
+  className="absolute top-4 left-40 bg-[#232323] text-white px-5 py-2 rounded-lg border-2 border-gray-600 hover:bg-gray-800 transition"
 >
   Home
 </Link>
+
+
 
       <div className="absolute top-4 right-4 flex gap-4 items-center">
         <button
