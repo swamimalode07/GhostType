@@ -8,7 +8,7 @@ import html2canvas from "html2canvas";
 import badge1 from "../badges/badge1.png";
 import badge2 from "../badges/badge2.png";
 import badge3 from "../badges/badge3.png";
-import defaultBadge from "../badges/default.png";
+import defaultBadge from "../badges/new.png";
 import { storage,ID } from "../appwriteConfig"; 
 
 
