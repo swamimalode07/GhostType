@@ -78,10 +78,9 @@ function Landing() {
   return (
     <div className='bg-[#232323]'style={{ cursor: isInactive ? "url('data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22><text y=%2228%22 font-size=%2228%22>👻</text></svg>') 16 16, auto" : "auto" }}>
       <div className="text-white w-full h-[565px] bg-[#232323] flex flex-col items-center justify-center relative">
-      <button className="absolute top-10 bg-[#2E2E2E] bg-opacity-40 backdrop-blur-lg border border-[#D82934] text-white text-[15px] font-semibold px-6 py-2 rounded-full flex items-center gap-2 shadow-md transition-all duration-300 ">
-          <FontAwesomeIcon icon={faHeart} className="text-[#D82934]" />
-            Proudly Open Source
-      </button>
+       <Link to={"https://peerlist.io/swamimalode/project/ghosttype"}>
+      <img src="/peerlist.svg" alt=""  style={{ width: "230px", height: "auto" }} className='w-45 mb-0'/>
+      </Link>
 
         <p className="text-[70px] font-[Metamorphous] mb-8 mt-12 selection:bg-red-500 selection:text-white p-12">Type fast, stay sharp, no limits!</p>
         
