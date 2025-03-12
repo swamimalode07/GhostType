@@ -102,11 +102,11 @@ function Landing() {
 
       </div>
 
-      <div className="w-full flex justify-center mt-6">
+{/*       <div className="w-full flex justify-center mt-6">
         <span className="font-bold text-lg tracking-wide text-white bg-[#232323] border-2 px-6 py-3 rounded-full shadow-md">
           {userCount}+ Users
         </span>
-      </div>
+      </div> */}
 
       <div className='w-full h-[400px] bg-[#232323] flex justify-center items-center gap-6'>
  
