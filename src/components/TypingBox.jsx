@@ -247,13 +247,13 @@ const TypingTest = () => {
 
 
       <div className="absolute top-4 right-4 flex gap-4 items-center">
-        <button
+{/*         <button
           onClick={toggleSound}
           className="bg-gray text-white p-3 rounded-lg border-2 border-gray-600 flex items-center gap-2 transition hover:bg-gray-700"
           aria-label="Toggle Sound"
         >
           {isSoundOn ? <Volume2 size={20} /> : <VolumeX size={20} />}
-        </button>
+        </button> */}
         <p className="bg-[#232323] text-white text-lg font-semibold p-3 rounded-[5px] border-2 border-gray-600 text-center">
           Time Left: <strong>{timeLeft}</strong>
         </p>
